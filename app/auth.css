@@ -1,0 +1,42 @@
+.auth-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(145deg, rgba(5, 8, 13, .7), rgba(5, 8, 13, .88)), url('/assets/jidang-atmosphere-v1.webp') center/cover fixed no-repeat, #080b11;
+}
+
+.auth-card {
+  width: min(440px, 100%);
+  border: 1px solid rgba(188, 207, 219, .2);
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(18, 26, 35, .94), rgba(8, 13, 19, .94));
+  padding: 28px;
+  box-shadow: 0 38px 110px rgba(0, 0, 0, .5), inset 0 1px 0 rgba(255, 255, 255, .055);
+  backdrop-filter: blur(22px) saturate(110%);
+}
+
+.auth-brand { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+.auth-brand h1, .auth-card > h1 { margin: 0; font-size: 27px; letter-spacing: .12em; }
+.auth-brand p, .auth-card > p { margin: 5px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.auth-card form { display: grid; gap: 14px; margin: 20px 0; }
+.auth-card label { display: grid; gap: 7px; color: #9dacb4; font-size: 11px; }
+.auth-card label small { color: #657680; font-size: 9px; line-height: 1.5; }
+.auth-card input { background: rgba(7, 12, 18, .68); border: 1px solid var(--line); border-radius: 11px; color: var(--text); padding: 11px; outline: none; box-shadow: inset 0 1px 0 rgba(255,255,255,.025); }
+.auth-card input:focus { border-color: rgba(104,214,186,.42); box-shadow: 0 0 0 3px rgba(104,210,186,.07); }
+.auth-card form > .primary-button { padding: 12px; margin-top: 4px; }
+.auth-card .notice { margin: 16px 0 0; }
+.form-error { border-left: 2px solid var(--red); background: #211217; color: #f19aa2 !important; padding: 9px 11px; margin: 0 !important; font-size: 11px !important; }
+.admin-accounts { padding: 20px; margin-bottom: 18px; }
+.admin-accounts h2 { margin: 0 0 15px; font-size: 17px; }
+.admin-accounts h2 small { color: var(--green); font: 11px var(--mono); margin-left: 8px; }
+.admin-accounts form { display: grid; grid-template-columns: 1fr 1fr 1.4fr .8fr auto; gap: 8px; }
+.admin-accounts input, .admin-accounts select { min-width: 0; background: #090f13; border: 1px solid var(--line); color: var(--text); padding: 9px; font-size: 11px; }
+.admin-message { color: var(--amber); font-size: 11px; }
+.account-list { margin-top: 15px; border-top: 1px solid var(--line); }
+.account-list > div { display: grid; grid-template-columns: 1fr auto auto auto; gap: 9px; align-items: center; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.account-list span b, .account-list span small { display: block; }
+.account-list span b { font-size: 11px; }.account-list span small { color: var(--muted); font-size: 9px; margin-top: 3px; }
+.account-list em { color: var(--green); font-size: 9px; font-style: normal; }
+.account-list button { background: transparent; border: 1px solid var(--line); color: #9baab2; padding: 6px 8px; font-size: 9px; }
+@media(max-width: 760px) { .admin-accounts form { grid-template-columns: 1fr; } .account-list > div { grid-template-columns: 1fr auto; } }
